@@ -826,34 +826,56 @@ footer a{
 
 /* BOTTOM FEATURES */
 .hero-features{
-  position:absolute;
-  z-index:4;
-  left:0;
-  right:0;
-  bottom:35px;
-  width:100%;
-  padding:0 45px;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:25px;
-  align-items:center;
+    bottom:18px;
+    left:0;
+    right:0;
+    padding:0 8px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:0;
+    align-items:center;
 }
 
 .hero-feature{
-  display:flex;
-  align-items:center;
-  gap:15px;
-  color:#fff;
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+    position:relative;
+    text-align:center;
+    padding:0 4px;
+}
+
+.hero-feature:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:1px;
+    height:42px;
+    background:rgba(255,255,255,.55);
 }
 
 .hero-feature img{
-  width:48px !important;
-  height:48px !important;
-  object-fit:contain;
-  flex-shrink:0;
-  filter:brightness(0) invert(1);
+    width:28px !important;
+    height:28px !important;
+    object-fit:contain;
 }
 
+.hero-feature strong{
+    font-size:10px;
+    line-height:1.2;
+    white-space:nowrap;
+}
+
+.hero-feature small{
+    font-size:8px;
+    line-height:1.2;
+    white-space:nowrap;
+}
 .hero-feature strong{
   display:block;
   color:#fff;
