@@ -7,527 +7,490 @@
 <title>Awan Trekking | Mount Batur Sunrise Trekking</title>
 
 <meta name="description"
-content="Awan Trekking offers private Mount Batur sunrise trekking, jeep tours and Bali adventure experiences with a local guide.">
+content="Awan Trekking offers private Mount Batur sunrise trekking, Jeep tours and Bali adventure experiences with a local guide.">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #ffffff;
-    color: #234d43;
-    line-height: 1.6;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#ffffff;
+    color:#234d43;
+    line-height:1.6;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
 }
 
 /* =========================
    HEADER
 ========================= */
 
-header {
-    width: 100%;
-    background: #ffffff;
-    border-bottom: 1px solid #eeeeee;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#ffffff;
+    border-bottom:1px solid #eeeeee;
 }
 
-.navbar {
-    max-width: 1100px;
-    margin: auto;
-    height: 70px;
-    padding: 0 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navbar{
+    max-width:1150px;
+    margin:auto;
+    padding:14px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
-.logo {
-    font-size: 15px;
-    font-weight: 800;
-    color: #12604f;
-    letter-spacing: .5px;
+.logo{
+    font-size:17px;
+    font-weight:800;
+    letter-spacing:1px;
+    color:#176653;
 }
 
-.logo span {
-    display: block;
-    font-size: 8px;
-    color: #b8863b;
-    letter-spacing: 1.5px;
+.logo span{
+    display:block;
+    font-size:8px;
+    letter-spacing:1.5px;
+    color:#8d8d8d;
+    margin-top:2px;
 }
 
-.menu {
-    display: flex;
-    gap: 25px;
-    font-size: 13px;
-    color: #34574f;
+.nav-links{
+    display:flex;
+    gap:25px;
+    align-items:center;
 }
 
-.menu a:hover {
-    color: #b8863b;
+.nav-links a{
+    font-size:13px;
+    color:#31574f;
 }
 
-.menu-button {
-    display: none;
-    font-size: 24px;
+.nav-button{
+    background:#176653;
+    color:white !important;
+    padding:9px 17px;
+    border-radius:20px;
+}
+
+.menu{
+    font-size:24px;
+    color:#176653;
+    display:none;
 }
 
 /* =========================
    HERO
 ========================= */
 
-.hero {
-    max-width: 1100px;
-    margin: auto;
-    padding: 65px 20px 45px;
+.hero{
+    max-width:1150px;
+    margin:auto;
+    padding:55px 20px 35px;
 }
 
-.hero-small {
-    font-size: 10px;
-    letter-spacing: 2px;
-    color: #b8863b;
-    font-weight: bold;
-    margin-bottom: 8px;
+.hero h1{
+    font-size:40px;
+    line-height:1.15;
+    color:#176653;
+    margin-bottom:15px;
 }
 
-.hero h1 {
-    font-size: 38px;
-    color: #17634f;
-    margin-bottom: 15px;
+.hero p{
+    max-width:720px;
+    font-size:15px;
+    color:#606060;
 }
 
-.hero p {
-    max-width: 700px;
-    color: #666;
-    font-size: 14px;
+.hero-buttons{
+    margin-top:25px;
+    display:flex;
+    gap:12px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:25px;
+    background:#176653;
+    color:#fff;
+    font-weight:bold;
+    font-size:13px;
+}
+
+.btn-outline{
+    background:#fff;
+    color:#176653;
+    border:1px solid #176653;
 }
 
 /* =========================
    SECTION
 ========================= */
 
-.section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 45px 20px;
+section{
+    max-width:1150px;
+    margin:auto;
+    padding:50px 20px;
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 30px;
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
 }
 
-.section-title span {
-    display: block;
-    color: #b8863b;
-    font-size: 10px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
+.section-label{
+    color:#b68a4c;
+    font-size:10px;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:5px;
 }
 
-.section-title h2 {
-    color: #17634f;
-    font-size: 26px;
+.section-title h2{
+    color:#176653;
+    font-size:27px;
 }
 
-.section-title p {
-    color: #777;
-    font-size: 13px;
-    margin-top: 8px;
-}
-
-/* =========================
-   TOUR GRID
-========================= */
-
-.tour-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
-}
-
-.tour-card {
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #eeeeee;
-    box-shadow: 0 5px 20px rgba(0,0,0,.07);
-    transition: .3s;
-}
-
-.tour-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0,0,0,.12);
-}
-
-.tour-image {
-    width: 100%;
-    height: 230px;
-    background: linear-gradient(
-        135deg,
-        #dcece7,
-        #f4eee2
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #8b9b96;
-    font-size: 13px;
-}
-
-.tour-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.tour-content {
-    padding: 20px;
-}
-
-.tour-content h3 {
-    color: #17634f;
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-.tour-content p {
-    color: #666;
-    font-size: 13px;
-    margin-bottom: 13px;
-}
-
-.meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    color: #777;
-    font-size: 11px;
-    margin-bottom: 15px;
-}
-
-.price {
-    font-weight: bold;
-    color: #b8863b;
-    font-size: 13px;
-}
-
-.detail-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 9px 16px;
-    border-radius: 5px;
-    background: #17634f;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.detail-button:hover {
-    background: #0e493b;
+.section-title p{
+    color:#777;
+    font-size:13px;
+    max-width:650px;
+    margin:7px auto 0;
 }
 
 /* =========================
-   BALI EXPERIENCES
+   TOUR CARDS
 ========================= */
 
-.experience-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
+.tour-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
 }
 
-.experience-card {
-    border: 1px solid #eeeeee;
-    border-radius: 12px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0 4px 15px rgba(0,0,0,.06);
+.tour-card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid #eeeeee;
+    box-shadow:0 4px 18px rgba(0,0,0,.07);
+    transition:.3s;
 }
 
-.experience-image {
-    height: 190px;
-    background: linear-gradient(
-        135deg,
-        #e7efec,
-        #f6f0e4
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #8b9b96;
-    font-size: 12px;
+.tour-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
 }
 
-.experience-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.tour-image{
+    height:220px;
+    overflow:hidden;
 }
 
-.experience-content {
-    padding: 18px;
+.tour-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-.experience-content h3 {
-    color: #17634f;
-    font-size: 16px;
-    margin-bottom: 5px;
+.tour-content{
+    padding:18px;
 }
 
-.experience-content p {
-    color: #777;
-    font-size: 12px;
+.tour-content h3{
+    font-size:17px;
+    color:#176653;
+    margin-bottom:7px;
+}
+
+.tour-content p{
+    font-size:12px;
+    color:#666;
+    min-height:42px;
+}
+
+.info{
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+    margin:13px 0;
+}
+
+.info span{
+    background:#f3f7f5;
+    padding:5px 8px;
+    border-radius:6px;
+    font-size:10px;
+    color:#41645b;
+}
+
+.price{
+    font-size:13px;
+    font-weight:bold;
+    color:#b17b39;
+    margin-bottom:13px;
+}
+
+.details{
+    font-size:12px;
+    color:#176653;
+    font-weight:bold;
+}
+
+/* =========================
+   EXPERIENCES
+========================= */
+
+.experience-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.experience-card{
+    border:1px solid #eeeeee;
+    border-radius:12px;
+    overflow:hidden;
+    background:white;
+    box-shadow:0 3px 15px rgba(0,0,0,.06);
+}
+
+.experience-card img{
+    height:190px;
+    object-fit:cover;
+}
+
+.experience-content{
+    padding:16px;
+}
+
+.experience-content h3{
+    font-size:16px;
+    color:#176653;
+    margin-bottom:5px;
+}
+
+.experience-content p{
+    color:#777;
+    font-size:12px;
 }
 
 /* =========================
    GALLERY
 ========================= */
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
 }
 
-.gallery-item {
-    height: 220px;
-    border-radius: 10px;
-    overflow: hidden;
-    background: #edf2f0;
+.gallery-item{
+    height:230px;
+    border-radius:10px;
+    overflow:hidden;
 }
 
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: .4s;
+.gallery-item img{
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
 }
 
-.gallery-item:hover img {
-    transform: scale(1.05);
+.gallery-item:hover img{
+    transform:scale(1.05);
 }
 
 /* =========================
    WHY AWAN
 ========================= */
 
-.why {
-    background: #f7faf8;
-    margin-top: 30px;
+.why{
+    background:#f7faf8;
+    max-width:none;
 }
 
-.why-content {
-    max-width: 900px;
-    margin: auto;
-    text-align: left;
+.why-inner{
+    max-width:900px;
+    margin:auto;
+    padding:10px 20px;
 }
 
-.why-content h2 {
-    color: #17634f;
-    font-size: 25px;
-    margin-bottom: 15px;
+.why h2{
+    color:#176653;
+    font-size:27px;
+    margin-bottom:15px;
 }
 
-.why-content p {
-    color: #777;
-    font-size: 14px;
-    margin-bottom: 20px;
+.why-list{
+    list-style:none;
 }
 
-.features {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 13px;
+.why-list li{
+    padding:8px 0;
+    font-size:13px;
+    color:#555;
 }
 
-.feature {
-    font-size: 13px;
-    color: #555;
+.why-list li::before{
+    content:"✓";
+    color:#176653;
+    font-weight:bold;
+    margin-right:10px;
 }
 
 /* =========================
    CTA
 ========================= */
 
-.cta {
-    text-align: center;
-    padding: 75px 20px;
-    background: linear-gradient(
-        135deg,
-        #edf5f1,
-        #f8f1e5
-    );
+.cta{
+    max-width:none;
+    text-align:center;
+    background:#eef6f2;
+    padding:60px 20px;
 }
 
-.cta h2 {
-    color: #17634f;
-    font-size: 28px;
-    margin-bottom: 10px;
+.cta h2{
+    color:#176653;
+    font-size:28px;
+    margin-bottom:10px;
 }
 
-.cta p {
-    color: #777;
-    font-size: 13px;
-    max-width: 600px;
-    margin: auto auto 20px;
-}
-
-.book-button {
-    display: inline-block;
-    background: #17634f;
-    color: #fff;
-    padding: 13px 28px;
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.book-button:hover {
-    background: #0d493b;
+.cta p{
+    color:#777;
+    font-size:13px;
+    max-width:600px;
+    margin:0 auto 22px;
 }
 
 /* =========================
    FOOTER
 ========================= */
 
-footer {
-    background: #f8f8f6;
-    padding: 45px 20px 20px;
+footer{
+    background:#173f37;
+    color:white;
+    padding:45px 20px 20px;
 }
 
-.footer-grid {
-    max-width: 1100px;
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    gap: 40px;
+.footer-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
 }
 
-.footer-column h3 {
-    color: #17634f;
-    font-size: 15px;
-    margin-bottom: 13px;
+footer h3{
+    font-size:18px;
+    margin-bottom:10px;
 }
 
-.footer-column p,
-.footer-column a {
-    color: #777;
-    font-size: 12px;
-    display: block;
-    margin-bottom: 7px;
+footer h4{
+    font-size:13px;
+    margin-bottom:10px;
 }
 
-.footer-column a:hover {
-    color: #b8863b;
+footer p,
+footer a{
+    color:#cbd8d4;
+    font-size:11px;
+    line-height:1.8;
 }
 
-.copyright {
-    max-width: 1100px;
-    margin: 35px auto 0;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
-    text-align: center;
-    color: #999;
-    font-size: 11px;
+.footer-bottom{
+    max-width:1100px;
+    margin:35px auto 0;
+    padding-top:15px;
+    border-top:1px solid rgba(255,255,255,.15);
+    text-align:center;
+    font-size:10px;
+    color:#b9c9c4;
 }
 
 /* =========================
    MOBILE
 ========================= */
 
-@media (max-width: 700px) {
+@media(max-width:700px){
 
-    .navbar {
-        height: 58px;
+    .nav-links{
+        display:none;
     }
 
-    .menu {
-        display: none;
+    .menu{
+        display:block;
     }
 
-    .menu-button {
-        display: block;
-        color: #17634f;
+    .hero{
+        padding:40px 18px 25px;
     }
 
-    .hero {
-        padding: 40px 18px 30px;
+    .hero h1{
+        font-size:29px;
     }
 
-    .hero h1 {
-        font-size: 27px;
+    .hero p{
+        font-size:13px;
     }
 
-    .hero p {
-        font-size: 12px;
+    section{
+        padding:40px 15px;
     }
 
-    .section {
-        padding: 35px 15px;
-    }
-
-    .section-title h2 {
-        font-size: 21px;
+    .section-title h2{
+        font-size:23px;
     }
 
     .tour-grid,
-    .experience-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
+    .experience-grid{
+        grid-template-columns:1fr;
+        gap:16px;
     }
 
-    .tour-image {
-        height: 190px;
+    .tour-image{
+        height:190px;
     }
 
-    .experience-image {
-        height: 180px;
+    .gallery{
+        grid-template-columns:1fr;
     }
 
-    .gallery {
-        grid-template-columns: 1fr;
+    .gallery-item{
+        height:220px;
     }
 
-    .gallery-item {
-        height: 230px;
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:25px;
     }
 
-    .features {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .cta {
-        padding: 55px 20px;
-    }
-
-    .cta h2 {
-        font-size: 23px;
-    }
 }
+
 </style>
 </head>
+
 
 <body>
 
@@ -536,43 +499,60 @@ footer {
 ========================= -->
 
 <header>
-    <div class="navbar">
 
-        <a href="#" class="logo">
-            AWAN TREKKING
-            <span>ADVENTURE • WALKING • NATURE TREKKING</span>
-        </a>
+<div class="navbar">
 
-        <nav class="menu">
-            <a href="#tours">Tours</a>
-            <a href="#experiences">Experiences</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<div class="logo">
+AWAN TREKKING
+<span>ADVENTURE • WALKING • NATURE TREKKING</span>
+</div>
 
-        <div class="menu-button">☰</div>
+<nav class="nav-links">
+<a href="#tours">Tours</a>
+<a href="#experiences">Experiences</a>
+<a href="#gallery">Gallery</a>
+<a href="#about">About</a>
+<a href="#contact" class="nav-button">BOOK NOW</a>
+</nav>
 
-    </div>
+<div class="menu">☰</div>
+
+</div>
+
 </header>
 
 
 <!-- =========================
-     HERO
+     WELCOME
 ========================= -->
+
+<main>
 
 <section class="hero">
 
-    <div class="hero-small">
-        LOCAL GUIDE • KINTAMANI • BALI
-    </div>
+<div class="section-label">
+WELCOME TO
+</div>
 
-    <h1>WELCOME TO<br>AWAN TREKKING</h1>
+<h1>AWAN TREKKING</h1>
 
-    <p>
-        Awan Trekking is a local adventure service based in Kintamani, Bali.
-        Discover Mount Batur sunrise, private trekking experiences,
-        Jeep tours and unforgettable Bali adventures with a local guide.
-    </p>
+<p>
+Awan Trekking is a local adventure service based in Kintamani, Bali.
+Discover Mount Batur through private sunrise trekking, Jeep tours,
+and nature experiences led by a local guide.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#tours" class="btn">
+EXPLORE TOURS
+</a>
+
+<a href="#contact" class="btn btn-outline">
+BOOK NOW
+</a>
+
+</div>
 
 </section>
 
@@ -581,251 +561,275 @@ footer {
      MOUNT BATUR TOURS
 ========================= -->
 
-<section class="section" id="tours">
+<section id="tours">
 
-    <div class="section-title">
-        <span>MOUNT BATUR EXPERIENCES</span>
-        <h2>Mount Batur Tours</h2>
-        <p>Private adventures with a local Mount Batur guide.</p>
-    </div>
+<div class="section-title">
 
-    <div class="tour-grid">
+<div class="section-label">
+MOUNT BATUR TOURS
+</div>
 
+<h2>Mount Batur Tours</h2>
 
-        <!-- TOUR 1 -->
+<p>
+Private Mount Batur experiences with a local guide.
+Choose the adventure that suits your trip.
+</p>
 
-        <article class="tour-card">
+</div>
 
-            <div class="tour-image">
-                <img src="images/mount-batur-sunrise.jpg"
-                     alt="Mount Batur Sunrise Trekking"
-                     onerror="this.style.display='none'">
-            </div>
 
-            <div class="tour-content">
+<div class="tour-grid">
 
-                <h3>
-                    Mount Batur Sunrise Trekking Private Tour
-                </h3>
 
-                <p>
-                    Private sunrise trek with a local Mount Batur guide
-                    and enjoy the beautiful sunrise from the mountain.
-                </p>
+<!-- TOUR 1 -->
 
-                <div class="meta">
-                    <span>📍 Kintamani, Bali</span>
-                    <span>👥 Private Tour</span>
-                    <span>🌅 Sunrise</span>
-                </div>
+<article class="tour-card">
 
-                <div class="price">
-                    Price on request
-                </div>
+<div class="tour-image">
 
-                <a href="#contact" class="detail-button">
-                    VIEW DETAILS
-                </a>
+<img
+src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+alt="Mount Batur Sunrise Trekking">
 
-            </div>
-        </article>
+</div>
 
+<div class="tour-content">
 
-        <!-- TOUR 2 -->
+<h3>
+Mount Batur Sunrise Trekking Private Tour
+</h3>
 
-        <article class="tour-card">
+<p>
+Private sunrise trek with a local Mount Batur guide.
+Enjoy the sunrise from the mountain.
+</p>
 
-            <div class="tour-image">
-                <img src="images/mount-batur-day.jpg"
-                     alt="Mount Batur Day Trekking"
-                     onerror="this.style.display='none'">
-            </div>
+<div class="info">
+<span>📍 Kintamani, Bali</span>
+<span>👥 Private Tour</span>
+<span>🌅 Sunrise</span>
+</div>
 
-            <div class="tour-content">
+<div class="price">
+Price on request
+</div>
 
-                <h3>
-                    Mount Batur Day Time
-                </h3>
+<a href="#contact" class="details">
+View Detail →
+</a>
 
-                <p>
-                    Enjoy Mount Batur in daylight with a private local
-                    guide and beautiful volcanic landscapes.
-                </p>
+</div>
 
-                <div class="meta">
-                    <span>📍 Kintamani, Bali</span>
-                    <span>👥 Private Tour</span>
-                    <span>☀️ Day</span>
-                </div>
+</article>
 
-                <div class="price">
-                    Price on request
-                </div>
 
-                <a href="#contact" class="detail-button">
-                    VIEW DETAILS
-                </a>
+<!-- TOUR 2 -->
 
-            </div>
-        </article>
+<article class="tour-card">
 
+<div class="tour-image">
 
-        <!-- TOUR 3 -->
+<img
+src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=80"
+alt="Mount Batur Day Tour">
 
-        <article class="tour-card">
+</div>
 
-            <div class="tour-image">
-                <img src="images/mount-batur-sunset.jpg"
-                     alt="Mount Batur Sunset Trekking"
-                     onerror="this.style.display='none'">
-            </div>
+<div class="tour-content">
 
-            <div class="tour-content">
+<h3>
+Mount Batur Day Time
+</h3>
 
-                <h3>
-                    Mount Batur Sunset Trekking
-                </h3>
+<p>
+Enjoy Mount Batur during daylight with a private local guide.
+</p>
 
-                <p>
-                    Hike Mount Batur and enjoy the changing colors
-                    of the sky during sunset.
-                </p>
+<div class="info">
+<span>📍 Kintamani, Bali</span>
+<span>👥 Private Tour</span>
+<span>☀️ Day Time</span>
+</div>
 
-                <div class="meta">
-                    <span>📍 Kintamani, Bali</span>
-                    <span>👥 Private Tour</span>
-                    <span>🌄 Sunset</span>
-                </div>
+<div class="price">
+Price on request
+</div>
 
-                <div class="price">
-                    Price on request
-                </div>
+<a href="#contact" class="details">
+View Detail →
+</a>
 
-                <a href="#contact" class="detail-button">
-                    VIEW DETAILS
-                </a>
+</div>
 
-            </div>
-        </article>
+</article>
 
 
-        <!-- TOUR 4 -->
+<!-- TOUR 3 -->
 
-        <article class="tour-card">
+<article class="tour-card">
 
-            <div class="tour-image">
-                <img src="images/batur-jeep-sunrise.jpg"
-                     alt="Mount Batur Jeep Sunrise Tour"
-                     onerror="this.style.display='none'">
-            </div>
+<div class="tour-image">
 
-            <div class="tour-content">
+<img
+src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+alt="Mount Batur Sunset Trekking">
 
-                <h3>
-                    Mount Batur Jeep Tour
-                </h3>
+</div>
 
-                <p>
-                    Experience Mount Batur sunrise viewpoints by Jeep
-                    and explore the volcanic landscape.
-                </p>
+<div class="tour-content">
 
-                <div class="meta">
-                    <span>📍 Kintamani, Bali</span>
-                    <span>🚙 Jeep</span>
-                    <span>🌅 Sunrise</span>
-                </div>
+<h3>
+Mount Batur Sunset Trekking
+</h3>
 
-                <div class="price">
-                    IDR 700K / Jeep
-                </div>
+<p>
+Hike to Mount Batur and enjoy changing colors across the Bali landscape.
+</p>
 
-                <a href="#contact" class="detail-button">
-                    VIEW DETAILS
-                </a>
+<div class="info">
+<span>📍 Kintamani, Bali</span>
+<span>👥 Private Tour</span>
+<span>🌄 Sunset</span>
+</div>
 
-            </div>
-        </article>
+<div class="price">
+Price on request
+</div>
 
+<a href="#contact" class="details">
+View Detail →
+</a>
 
-        <!-- TOUR 5 -->
+</div>
 
-        <article class="tour-card">
+</article>
 
-            <div class="tour-image">
-                <img src="images/batur-jeep-day.jpg"
-                     alt="Mount Batur Jeep Day Tour"
-                     onerror="this.style.display='none'">
-            </div>
 
-            <div class="tour-content">
+<!-- TOUR 4 -->
 
-                <h3>
-                    Mount Batur Jeep Tour Day Time
-                </h3>
+<article class="tour-card">
 
-                <p>
-                    Explore the volcanic landscape of Mount Batur
-                    during the day by private Jeep.
-                </p>
+<div class="tour-image">
 
-                <div class="meta">
-                    <span>📍 Kintamani, Bali</span>
-                    <span>🚙 Jeep</span>
-                    <span>☀️ Day</span>
-                </div>
+<img
+src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=900&q=80"
+alt="Mount Batur Jeep Tour">
 
-                <div class="price">
-                    Price on request
-                </div>
+</div>
 
-                <a href="#contact" class="detail-button">
-                    VIEW DETAILS
-                </a>
+<div class="tour-content">
 
-            </div>
-        </article>
+<h3>
+Mount Batur Jeep Tour
+</h3>
 
+<p>
+Experience Mount Batur sunrise viewpoints by Jeep.
+</p>
 
-        <!-- TOUR 6 -->
+<div class="info">
+<span>📍 Kintamani, Bali</span>
+<span>🚙 Jeep</span>
+<span>🌅 Sunrise</span>
+</div>
 
-        <article class="tour-card">
+<div class="price">
+IDR 700K / Jeep
+</div>
 
-            <div class="tour-image">
-                <img src="images/batur-complete-adventure.jpg"
-                     alt="Mount Batur Complete Adventure"
-                     onerror="this.style.display='none'">
-            </div>
+<a href="#contact" class="details">
+View Detail →
+</a>
 
-            <div class="tour-content">
+</div>
 
-                <h3>
-                    Mount Batur Complete Adventure
-                </h3>
+</article>
 
-                <p>
-                    Discover sunrise viewpoints, Black Lava and
-                    Black Sand with a local guide.
-                </p>
 
-                <div class="meta">
-                    <span>📍 Kintamani</span>
-                    <span>🚙 Jeep</span>
-                    <span>🏔️ Adventure</span>
-                </div>
+<!-- TOUR 5 -->
 
-                <div class="price">
-                    IDR 900K / Jeep
-                </div>
+<article class="tour-card">
 
-                <a href="#contact" class="detail-button">
-                    VIEW DETAILS
-                </a>
+<div class="tour-image">
 
-            </div>
-        </article>
+<img
+src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80"
+alt="Mount Batur Jeep Day Tour">
 
-    </div>
+</div>
+
+<div class="tour-content">
+
+<h3>
+Mount Batur Jeep Tour Day Time
+</h3>
+
+<p>
+Explore the volcanic landscape of Mount Batur during the day.
+</p>
+
+<div class="info">
+<span>📍 Kintamani, Bali</span>
+<span>🚙 Jeep</span>
+<span>☀️ Day</span>
+</div>
+
+<div class="price">
+Price on request
+</div>
+
+<a href="#contact" class="details">
+View Detail →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- TOUR 6 -->
+
+<article class="tour-card">
+
+<div class="tour-image">
+
+<img
+src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=900&q=80"
+alt="Mount Batur Jeep Adventure">
+
+</div>
+
+<div class="tour-content">
+
+<h3>
+Mount Batur Jeep Tour – Sunrise & Adventure
+</h3>
+
+<p>
+Discover sunrise viewpoints and the volcanic landscape around Mount Batur.
+</p>
+
+<div class="info">
+<span>📍 Kintamani</span>
+<span>🚙 Jeep</span>
+<span>🌋 Adventure</span>
+</div>
+
+<div class="price">
+Price on request
+</div>
+
+<a href="#contact" class="details">
+View Detail →
+</a>
+
+</div>
+
+</article>
+
+</div>
+
 </section>
 
 
@@ -833,155 +837,206 @@ footer {
      MORE BALI EXPERIENCES
 ========================= -->
 
-<section class="section" id="experiences">
+<section id="experiences">
 
-    <div class="section-title">
-        <span>PRIVATE ADVENTURES</span>
-        <h2>More Bali Experiences</h2>
-        <p>Explore more experiences around Bali with Awan Trekking.</p>
-    </div>
+<div class="section-title">
 
-    <div class="experience-grid">
+<div class="section-label">
+PRIVATE EXPERIENCES
+</div>
 
+<h2>More Bali Experiences</h2>
 
-        <article class="experience-card">
-            <div class="experience-image">
-                <img src="images/atv-ride.jpg"
-                     alt="Bali ATV Ride"
-                     onerror="this.style.display='none'">
-            </div>
+<p>
+Continue your Bali adventure with other local experiences.
+</p>
 
-            <div class="experience-content">
-                <h3>Bali ATV Adventure</h3>
-                <p>Ride through Bali's natural landscapes and villages.</p>
-            </div>
-        </article>
+</div>
 
 
-        <article class="experience-card">
-            <div class="experience-image">
-                <img src="images/waterfall.jpg"
-                     alt="Tukad Cepung Waterfall"
-                     onerror="this.style.display='none'">
-            </div>
-
-            <div class="experience-content">
-                <h3>Tukad Cepung Waterfall</h3>
-                <p>Discover one of Bali's beautiful hidden waterfalls.</p>
-            </div>
-        </article>
+<div class="experience-grid">
 
 
-        <article class="experience-card">
-            <div class="experience-image">
-                <img src="images/bali-swing.jpg"
-                     alt="Bali Swing"
-                     onerror="this.style.display='none'">
-            </div>
+<article class="experience-card">
 
-            <div class="experience-content">
-                <h3>Private Bali Tour</h3>
-                <p>Explore Bali with a private driver and local guide.</p>
-            </div>
-        </article>
+<img
+src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+alt="Bali Private Tour">
 
+<div class="experience-content">
 
-        <article class="experience-card">
-            <div class="experience-image">
-                <img src="images/rafting.jpg"
-                     alt="Bali Rafting"
-                     onerror="this.style.display='none'">
-            </div>
+<h3>Private Bali Tour</h3>
 
-            <div class="experience-content">
-                <h3>Bali Rafting Adventure</h3>
-                <p>Enjoy an exciting river adventure in Bali.</p>
-            </div>
-        </article>
+<p>
+Discover beautiful places in Bali with a private driver and local guide.
+</p>
+
+</div>
+
+</article>
 
 
-        <article class="experience-card">
-            <div class="experience-image">
-                <img src="images/hot-spring.jpg"
-                     alt="Batur Hot Spring"
-                     onerror="this.style.display='none'">
-            </div>
+<article class="experience-card">
 
-            <div class="experience-content">
-                <h3>Batur Hot Spring</h3>
-                <p>Relax after your Mount Batur adventure.</p>
-            </div>
-        </article>
+<img
+src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=900&q=80"
+alt="ATV Bali Adventure">
 
+<div class="experience-content">
 
-        <article class="experience-card">
-            <div class="experience-image">
-                <img src="images/bali-adventure.jpg"
-                     alt="Bali Adventure"
-                     onerror="this.style.display='none'">
-            </div>
+<h3>ATV Quad Adventure</h3>
 
-            <div class="experience-content">
-                <h3>Bali Adventure</h3>
-                <p>Create your own private Bali experience with us.</p>
-            </div>
-        </article>
+<p>
+Enjoy an exciting ATV adventure through Bali's natural landscape.
+</p>
+
+</div>
+
+</article>
 
 
-    </div>
+<article class="experience-card">
+
+<img
+src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=900&q=80"
+alt="Bali Waterfall">
+
+<div class="experience-content">
+
+<h3>Waterfall Tour</h3>
+
+<p>
+Explore beautiful waterfalls and hidden natural places around Bali.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="experience-card">
+
+<img
+src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+alt="Bali Swing">
+
+<div class="experience-content">
+
+<h3>Bali Swing Experience</h3>
+
+<p>
+Enjoy spectacular views and memorable moments in Bali.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="experience-card">
+
+<img
+src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?auto=format&fit=crop&w=900&q=80"
+alt="Bali Rafting">
+
+<div class="experience-content">
+
+<h3>Bali Rafting</h3>
+
+<p>
+Experience Bali's rivers and enjoy an exciting outdoor adventure.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="experience-card">
+
+<img
+src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=900&q=80"
+alt="Bali Hot Spring">
+
+<div class="experience-content">
+
+<h3>Hot Spring Experience</h3>
+
+<p>
+Relax in natural hot springs after your Mount Batur adventure.
+</p>
+
+</div>
+
+</article>
+
+
+</div>
+
 </section>
 
 
 <!-- =========================
-     GALLERY
+     MOMENTS
 ========================= -->
 
-<section class="section" id="gallery">
+<section id="gallery">
 
-    <div class="section-title">
-        <span>MOMENTS FROM THE MOUNTAIN</span>
-        <h2>Moments From The Mountain</h2>
-    </div>
+<div class="section-title">
 
-    <div class="gallery">
+<div class="section-label">
+MOMENTS FROM THE MOUNTAIN
+</div>
 
-        <div class="gallery-item">
-            <img src="images/gallery-1.jpg"
-                 alt="Mount Batur Sunrise"
-                 onerror="this.style.display='none'">
-        </div>
+<h2>Moments From The Mountain</h2>
 
-        <div class="gallery-item">
-            <img src="images/gallery-2.jpg"
-                 alt="Mount Batur Trekking"
-                 onerror="this.style.display='none'">
-        </div>
+<p>
+A collection of moments from Mount Batur and our adventures in Bali.
+</p>
 
-        <div class="gallery-item">
-            <img src="images/gallery-3.jpg"
-                 alt="Mount Batur View"
-                 onerror="this.style.display='none'">
-        </div>
+</div>
 
-        <div class="gallery-item">
-            <img src="images/gallery-4.jpg"
-                 alt="Mount Batur Jeep"
-                 onerror="this.style.display='none'">
-        </div>
 
-        <div class="gallery-item">
-            <img src="images/gallery-5.jpg"
-                 alt="Bali Sunrise"
-                 onerror="this.style.display='none'">
-        </div>
+<div class="gallery">
 
-        <div class="gallery-item">
-            <img src="images/gallery-6.jpg"
-                 alt="Kintamani Bali"
-                 onerror="this.style.display='none'">
-        </div>
+<div class="gallery-item">
+<img
+src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+alt="Mount Batur">
+</div>
 
-    </div>
+<div class="gallery-item">
+<img
+src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80"
+alt="Bali Mountain">
+</div>
+
+<div class="gallery-item">
+<img
+src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=900&q=80"
+alt="Bali Sunrise">
+</div>
+
+<div class="gallery-item">
+<img
+src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+alt="Bali Nature">
+</div>
+
+<div class="gallery-item">
+<img
+src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=900&q=80"
+alt="Bali Adventure">
+</div>
+
+<div class="gallery-item">
+<img
+src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=900&q=80"
+alt="Bali Landscape">
+</div>
+
+</div>
+
 </section>
 
 
@@ -989,56 +1044,35 @@ footer {
      WHY AWAN TREKKING
 ========================= -->
 
-<section class="why">
+<section id="about" class="why">
 
-    <div class="section">
+<div class="why-inner">
 
-        <div class="why-content">
+<div class="section-label">
+WHY CHOOSE US
+</div>
 
-            <div class="hero-small">
-                WHY CHOOSE US
-            </div>
+<h2>
+Experience Mount Batur With Awan Trekking
+</h2>
 
-            <h2>
-                Experience Mount Batur With Awan Trekking
-            </h2>
+<ul class="why-list">
 
-            <p>
-                Explore Mount Batur with a local guide and enjoy
-                a private and memorable adventure in Kintamani.
-            </p>
+<li>Local guide from Kintamani</li>
 
-            <div class="features">
+<li>Private and flexible experiences</li>
 
-                <div class="feature">
-                    ✓ Local Mount Batur Experience
-                </div>
+<li>Sunrise, sunset and day trekking</li>
 
-                <div class="feature">
-                    ✓ Private Trekking Experience
-                </div>
+<li>Mount Batur Jeep tours</li>
 
-                <div class="feature">
-                    ✓ Sunrise, Sunset and Day Tours
-                </div>
+<li>Friendly local service</li>
 
-                <div class="feature">
-                    ✓ Jeep Tours Available
-                </div>
+<li>Flexible packages and meeting points</li>
 
-                <div class="feature">
-                    ✓ Friendly Local Guide
-                </div>
+</ul>
 
-                <div class="feature">
-                    ✓ Flexible Private Tours
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
@@ -1047,24 +1081,31 @@ footer {
      CTA
 ========================= -->
 
-<section class="cta" id="contact">
+<section id="contact" class="cta">
 
-    <h2>
-        Ready for Your Mount Batur Adventure?
-    </h2>
+<div class="section-label">
+READY FOR YOUR MOUNT BATUR ADVENTURE?
+</div>
 
-    <p>
-        Contact Awan Trekking today and plan your private
-        Mount Batur trekking or Jeep adventure.
-    </p>
+<h2>
+Ready for Your Mount Batur Adventure?
+</h2>
 
-    <a class="book-button"
-       href="https://wa.me/6281234567890"
-       target="_blank">
-        BOOK NOW
-    </a>
+<p>
+Contact Awan Trekking and plan your private Mount Batur experience
+with a local guide.
+</p>
+
+<a
+href="https://wa.me/6281234567890"
+class="btn"
+target="_blank">
+BOOK VIA WHATSAPP
+</a>
 
 </section>
+
+</main>
 
 
 <!-- =========================
@@ -1073,54 +1114,65 @@ footer {
 
 <footer>
 
-    <div class="footer-grid">
+<div class="footer-grid">
 
-        <div class="footer-column">
+<div>
 
-            <h3>AWAN TREKKING</h3>
+<h3>AWAN TREKKING</h3>
 
-            <p>
-                Adventure • Walking • Nature Trekking
-            </p>
+<p>
+Adventure • Walking • Nature Trekking
+</p>
 
-            <p>
-                Local Mount Batur trekking guide
-                based in Kintamani, Bali.
-            </p>
+<p>
+Local Mount Batur trekking guide and Bali adventure service
+based in Kintamani, Bali.
+</p>
 
-        </div>
-
-
-        <div class="footer-column">
-
-            <h3>Quick Links</h3>
-
-            <a href="#tours">Mount Batur Tours</a>
-            <a href="#experiences">Bali Experiences</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Book Now</a>
-
-        </div>
+</div>
 
 
-        <div class="footer-column">
+<div>
 
-            <h3>Our Location</h3>
+<h4>QUICK LINKS</h4>
 
-            <p>📍 Kintamani, Bali</p>
-            <p>📱 WhatsApp</p>
-            <p>📷 @awantrekking</p>
+<p><a href="#tours">Mount Batur Tours</a></p>
+<p><a href="#experiences">Bali Experiences</a></p>
+<p><a href="#gallery">Gallery</a></p>
+<p><a href="#about">About Us</a></p>
+<p><a href="#contact">Contact</a></p>
 
-        </div>
-
-    </div>
+</div>
 
 
-    <div class="copyright">
-        © 2026 Awan Trekking. All Rights Reserved.
-    </div>
+<div>
+
+<h4>OUR LOCATION</h4>
+
+<p>Kintamani, Bali</p>
+<p>Indonesia</p>
+
+<p>
+WhatsApp: +62 812-3456-7890
+</p>
+
+<p>
+Instagram: @awantrekking
+</p>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 Awan Trekking. All Rights Reserved.
+
+</div>
 
 </footer>
+
 
 </body>
 </html>
