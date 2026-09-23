@@ -659,7 +659,377 @@ footer a{
     }
 
 }
+/* =========================================
+   AWAN TREKKING - NEW HERO DESIGN
+   ========================================= */
 
+.hero{
+  position:relative;
+  min-height:720px;
+  height:calc(100vh - 100px);
+  max-height:900px;
+  overflow:hidden;
+  padding:0 !important;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+}
+
+/* HERO SLIDER */
+.hero-slider{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  z-index:0;
+}
+
+.hero-slide{
+  position:absolute;
+  inset:0;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover;
+  opacity:0;
+  transition:opacity 1.2s ease;
+}
+
+.hero-slide:first-child{
+  opacity:1;
+}
+
+/* DARK OVERLAY */
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to bottom,
+    rgba(0,0,0,.20),
+    rgba(0,0,0,.25) 45%,
+    rgba(0,0,0,.55)
+  );
+  z-index:1;
+}
+
+/* MAIN HERO CONTENT */
+.hero-content{
+  position:relative;
+  z-index:3;
+  width:100%;
+  max-width:1100px;
+  padding:50px 25px 150px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* TOP SERVICES */
+.hero-services{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:0;
+  margin-bottom:22px;
+}
+
+.hero-service{
+  min-width:175px;
+  padding:0 30px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+}
+
+.hero-service + .hero-service{
+  border-left:1px solid rgba(255,255,255,.65);
+}
+
+.hero-service img{
+  width:42px !important;
+  height:42px !important;
+  object-fit:contain;
+  filter:brightness(0) invert(1);
+}
+
+.hero-service span{
+  color:#fff;
+  font-size:16px;
+  font-weight:700;
+  letter-spacing:.5px;
+}
+
+/* SUBTITLE */
+.hero-subtitle{
+  color:#fff;
+  font-size:15px;
+  letter-spacing:6px;
+  font-weight:400;
+  margin:0 0 10px;
+}
+
+/* TITLE */
+.hero h1{
+  margin:0 !important;
+  color:#fff;
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:64px !important;
+  line-height:.95;
+  font-weight:700;
+  text-align:center;
+  text-shadow:0 3px 12px rgba(0,0,0,.35);
+}
+
+.hero h1 span{
+  display:block;
+  color:#f2ad45;
+  font-family:"Brush Script MT","Segoe Script",cursive;
+  font-size:1.05em;
+  font-weight:500;
+  margin-top:8px;
+  transform:rotate(-2deg);
+}
+
+/* DESCRIPTION */
+.hero p{
+  max-width:850px;
+  margin:18px auto 25px !important;
+  color:#fff;
+  font-size:20px !important;
+  line-height:1.45;
+  text-align:center;
+  text-shadow:0 2px 7px rgba(0,0,0,.45);
+}
+
+/* BUTTON */
+.hero-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:330px;
+  padding:18px 35px;
+  border-radius:50px;
+  background:#087b68;
+  color:#fff !important;
+  font-size:18px;
+  font-weight:700;
+  letter-spacing:.5px;
+  text-decoration:none !important;
+  box-shadow:0 8px 25px rgba(0,0,0,.25);
+  transition:.3s ease;
+}
+
+.hero-btn:hover{
+  background:#096957;
+  transform:translateY(-2px);
+}
+
+/* BOTTOM FEATURES */
+.hero-features{
+  position:absolute;
+  z-index:4;
+  left:0;
+  right:0;
+  bottom:35px;
+  width:100%;
+  padding:0 45px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+  align-items:center;
+}
+
+.hero-feature{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  color:#fff;
+}
+
+.hero-feature img{
+  width:48px !important;
+  height:48px !important;
+  object-fit:contain;
+  flex-shrink:0;
+  filter:brightness(0) invert(1);
+}
+
+.hero-feature strong{
+  display:block;
+  color:#fff;
+  font-size:17px;
+  font-weight:700;
+  margin-bottom:3px;
+}
+
+.hero-feature small{
+  display:block;
+  color:#fff;
+  font-size:13px;
+  line-height:1.3;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width:900px){
+
+  .hero{
+    min-height:680px;
+  }
+
+  .hero-content{
+    padding:45px 20px 150px;
+  }
+
+  .hero h1{
+    font-size:52px !important;
+  }
+
+  .hero p{
+    font-size:18px !important;
+  }
+
+  .hero-feature{
+    gap:9px;
+  }
+
+  .hero-feature img{
+    width:40px !important;
+    height:40px !important;
+  }
+
+  .hero-feature strong{
+    font-size:14px;
+  }
+
+  .hero-feature small{
+    font-size:11px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width:600px){
+
+  .hero{
+    min-height:700px;
+    height:calc(100vh - 80px);
+    max-height:none;
+  }
+
+  .hero-content{
+    padding:35px 15px 165px;
+  }
+
+.hero-services{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:0;
+    margin-bottom:24px;
+}
+
+.hero-service{
+    width:150px;
+    text-align:center;
+    position:relative;
+    padding:0 20px;
+}
+
+.hero-service:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:1px;
+    height:55px;
+    background:rgba(255,255,255,.65);
+}
+}
+
+.hero-service img{
+    width:42px !important;
+    height:42px !important;
+    object-fit:contain;
+    filter:brightness(0) invert(1);
+    margin-bottom:8px;
+}
+
+.hero-service span{
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    color:#fff;
+    white-space:nowrap;
+}
+  }
+
+  .hero-subtitle{
+    font-size:11px;
+    letter-spacing:4px;
+    margin-bottom:10px;
+  }
+
+  .hero h1{
+    font-size:40px !important;
+    line-height:1;
+  }
+
+  .hero h1 span{
+    font-size:1.05em;
+    margin-top:5px;
+  }
+
+  .hero p{
+    max-width:360px;
+    font-size:15px !important;
+    line-height:1.4;
+    margin:15px auto 20px !important;
+  }
+
+  .hero-btn{
+    min-width:250px;
+    padding:15px 25px;
+    font-size:15px;
+  }
+
+.hero-features{
+    bottom:18px;
+    padding:0 10px;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px 12px;
+}
+
+.hero-feature{
+    gap:8px;
+    min-width:0;
+}
+
+.hero-feature img{
+    width:34px !important;
+    height:34px !important;
+    object-fit:contain;
+}
+
+.hero-feature strong{
+    font-size:12px;
+    line-height:1.2;
+}
+
+.hero-feature small{
+    font-size:9px;
+    line-height:1.2;
+}
+}
 </style>
 </head>
 
@@ -709,13 +1079,11 @@ footer a{
 
   <!-- HERO SLIDESHOW -->
   <div class="hero-slider">
-
     <img src="hero-1.jpeg.jpeg" class="hero-slide">
-<img src="hero-2.jpeg.jpeg" class="hero-slide">
-<img src="hero-3.jpeg.jpeg" class="hero-slide">
-<img src="hero-4.jpeg.jpeg" class="hero-slide">
-<img src="hero-5.jpeg.jpeg" class="hero-slide">
-
+    <img src="hero-2.jpeg.jpeg" class="hero-slide">
+    <img src="hero-3.jpeg.jpeg" class="hero-slide">
+    <img src="hero-4.jpeg.jpeg" class="hero-slide">
+    <img src="hero-5.jpeg.jpeg" class="hero-slide">
   </div>
 
   <!-- DARK OVERLAY -->
@@ -724,17 +1092,38 @@ footer a{
   <!-- HERO CONTENT -->
   <div class="hero-content">
 
+    <!-- TOP ICONS -->
+    <div class="hero-services">
+
+      <div class="hero-service">
+        <img src="person-hiking-solid-full.svg">
+        <span>TREKKING</span>
+      </div>
+
+      <div class="hero-service">
+        <img src="car-solid-full.svg">
+        <span>JEEP TOUR</span>
+      </div>
+
+      <div class="hero-service">
+        <img src="mountain-solid-full.svg">
+        <span>ADVENTURE</span>
+      </div>
+
+    </div>
+
     <div class="hero-subtitle">
-      Mount Batur Sunrise Trekking
+      PRIVATE EXPERIENCES
     </div>
 
     <h1>
-      Mount Batur Sunrise Trekking
+      Mount Batur Sunrise
+      <span>Adventure</span>
     </h1>
 
     <p>
-      Experience an unforgettable sunrise adventure
-      with a private local guide in Kintamani, Bali.
+      Trekking, Jeep Tour and unforgettable adventures in Kintamani, Bali
+      with a local guide.
     </p>
 
     <a href="#tours" class="hero-btn">
@@ -743,17 +1132,44 @@ footer a{
 
   </div>
 
-  <!-- SLIDE INDICATORS -->
-  <div class="hero-dots">
-    <span class="hero-dot active"></span>
-    <span class="hero-dot"></span>
-    <span class="hero-dot"></span>
-    <span class="hero-dot"></span>
-    <span class="hero-dot"></span>
+  <!-- HERO FEATURES -->
+  <div class="hero-features">
+
+    <div class="hero-feature">
+      <img src="user-group-solid-full.svg">
+      <div>
+        <strong>Private Tours</strong>
+        <small>Just You &amp; Your Guide</small>
+      </div>
+    </div>
+
+    <div class="hero-feature">
+      <img src="envira-brands-solid-full.svg">
+      <div>
+        <strong>Local Guide</strong>
+        <small>Authentic Experience</small>
+      </div>
+    </div>
+
+    <div class="hero-feature">
+      <img src="shield-heart-solid-full.svg">
+      <div>
+        <strong>Safe &amp; Reliable</strong>
+        <small>Your Safety Our Priority</small>
+      </div>
+    </div>
+
+    <div class="hero-feature">
+      <img src="mountain-sun-solid-full.svg">
+      <div>
+        <strong>Stunning Views</strong>
+        <small>Unforgettable Moments</small>
+      </div>
+    </div>
+
   </div>
 
 </section>
-
 
 <!-- =========================
      MOUNT BATUR TOURS
