@@ -1172,6 +1172,51 @@ footer a{
     font-size:8px !important;
     white-space:nowrap !important;
 }
+#tours .book-now-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-width: 280px;
+    padding: 16px 30px;
+    background: #f58220;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 800;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+#tours .book-now-btn img {
+    width: 27px;
+    height: 27px;
+    object-fit: contain;
+}
+
+#tours .book-now-btn strong {
+    font-size: 26px;
+    line-height: 1;
+}
+
+#tours .section-label {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+#tours .section-label::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 55px;
+    height: 3px;
+    background: #f58220;
+    border-radius: 3px;
+    transform: translateX(-50%);
+}
+
 </style>
 </head>
 
@@ -1339,10 +1384,11 @@ footer a{
       for a spectacular sunrise or explore the volcanic landscape by 4WD Jeep.
     </p>
 
-    <a href="#booking" class="book-now-btn">
-      BOOK NOW <span>→</span>
-    </a>
-
+   <a href="#booking" class="book-now-btn">
+    <img src="monthlycalendar_112505.svg" alt="Calendar">
+    <strong>BOOK NOW</strong>
+    <span>→</span>
+</a>
   </div>
 
 </section>
