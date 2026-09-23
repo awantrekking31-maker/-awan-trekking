@@ -151,10 +151,22 @@ header{
     color:#606060;
 }
 
-.hero-buttons{
-    margin-top:25px;
-    display:flex;
-    gap:12px;
+.hero-btn{
+  display:inline-block;
+  background:#176653;
+  color:#fff !important;
+  padding:16px 30px;
+  border-radius:35px;
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:.5px;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.hero-btn:hover{
+  transform:translateY(-2px);
+}
 }
 
 .btn{
@@ -518,14 +530,83 @@ footer a{
     z-index:1001;
 }
 }
+/* =========================
+   HERO AUTOMATIC SLIDER
+========================= */
 
-    .hero{
-        padding:40px 18px 25px;
-    }
+.hero-slider{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index:0;
+}
 
-    .hero h1{
-        font-size:29px;
-    }
+.hero-slide{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity 1.2s ease-in-out;
+}
+
+.hero-slide.active{
+    opacity:1;
+}
+
+.hero-slider::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.28);
+    z-index:1;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+@media (max-width:768px){
+
+  .hero{
+    min-height:620px;
+    height:620px;
+    padding:40px 20px 35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .hero h1{
+    font-size:32px;
+    line-height:1.15;
+    margin:12px 0 18px;
+    color:#ffffff;
+    font-weight:800;
+  }
+
+  .hero p{
+    font-size:16px;
+    line-height:1.7;
+    color:#ffffff;
+    max-width:650px;
+    margin:0 auto 28px;
+  }
+
+  .hero .btn,
+  .hero a{
+    font-size:15px;
+    padding:16px 28px;
+    border-radius:35px;
+  }
+
+}
 
     .hero p{
         font-size:13px;
@@ -626,29 +707,50 @@ footer a{
 
 <section class="hero">
 
-<div class="section-label">
-WELCOME TO
-</div>
+  <!-- HERO SLIDESHOW -->
+  <div class="hero-slider">
 
-<h1>AWAN TREKKING</h1>
+    <img src="hero-1.jpeg.jpeg" class="hero-slide">
+<img src="hero-2.jpeg.jpeg" class="hero-slide">
+<img src="hero-3.jpeg.jpeg" class="hero-slide">
+<img src="hero-4.jpeg.jpeg" class="hero-slide">
+<img src="hero-5.jpeg.jpeg" class="hero-slide">
 
-<p>
-Awan Trekking is a local adventure service based in Kintamani, Bali.
-Discover Mount Batur through private sunrise trekking, Jeep tours,
-and nature experiences led by a local guide.
-</p>
+  </div>
 
-<div class="hero-buttons">
+  <!-- DARK OVERLAY -->
+  <div class="hero-overlay"></div>
 
-<a href="#tours" class="btn">
-EXPLORE TOURS
-</a>
+  <!-- HERO CONTENT -->
+  <div class="hero-content">
 
-<a href="#contact" class="btn btn-outline">
-BOOK NOW
-</a>
+    <div class="hero-subtitle">
+      Mount Batur Sunrise Trekking
+    </div>
 
-</div>
+    <h1>
+      Mount Batur Sunrise Trekking
+    </h1>
+
+    <p>
+      Experience an unforgettable sunrise adventure
+      with a private local guide in Kintamani, Bali.
+    </p>
+
+    <a href="#tours" class="hero-btn">
+      → &nbsp; EXPLORE TOURS
+    </a>
+
+  </div>
+
+  <!-- SLIDE INDICATORS -->
+  <div class="hero-dots">
+    <span class="hero-dot active"></span>
+    <span class="hero-dot"></span>
+    <span class="hero-dot"></span>
+    <span class="hero-dot"></span>
+    <span class="hero-dot"></span>
+  </div>
 
 </section>
 
@@ -682,14 +784,24 @@ Choose the adventure that suits your trip.
 
 <article class="tour-card">
 
-<div class="tour-image">
+<div class="tour-image tour-slider">
 
-<img
-src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
-alt="Mount Batur Sunrise Trekking">
+  <img
+    src="FOTO-1"
+    alt="Mount Batur Sunrise Trekking"
+    class="slide active">
+
+  <img
+    src="FOTO-2"
+    alt="Mount Batur Sunrise Trekking"
+    class="slide">
+
+  <img
+    src="FOTO-3"
+    alt="Mount Batur Sunrise Trekking"
+    class="slide">
 
 </div>
-
 <div class="tour-content">
 
 <h3>
@@ -1268,7 +1380,27 @@ Instagram: @awantrekking
 </div>
 
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+  const slides = document.querySelectorAll(".hero-slide");
+
+  if (slides.length === 0) return;
+
+  let currentSlide = 0;
+
+  setInterval(function () {
+
+    slides[currentSlide].classList.remove("active");
+
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    slides[currentSlide].classList.add("active");
+
+  }, 4000);
+
+});
+</script>
 
 </body>
 </html>
