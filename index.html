@@ -335,6 +335,21 @@ section{
     padding:24px 24px 26px;
 }
 
+.mountain-divider{
+    width:100%;
+    max-width:850px;
+    margin:45px auto 55px;
+    text-align:center;
+}
+
+.mountain-divider img{
+    width:65px;
+    height:auto;
+    display:block;
+    margin:0 auto;
+    object-fit:contain;
+}
+
 .experience-content h3{
     font-size:24px;
     line-height:1.25;
@@ -1281,6 +1296,39 @@ footer a{
     color: #f58220;
     font-size: 15px;
 }
+/* MOUNTAIN SECTION DIVIDER */
+.mountain-divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    width:90%;
+    margin:60px auto;
+}
+
+.mountain-divider::before,
+.mountain-divider::after{
+    content:"";
+    flex:1;
+    height:2px;
+    background:#176653;
+}
+
+.mountain-divider{
+    width:100%;
+    max-width:850px;
+    margin:45px auto 55px;
+    text-align:center;
+}
+
+.mountain-divider img{
+    width:100%;
+    max-width:850px;
+    height:auto;
+    display:block;
+    margin:0 auto;
+    object-fit:contain;
+}
 </style>
 </head>
 
@@ -1457,6 +1505,10 @@ footer a{
 
 </section>
 
+<div class="mountain-divider">
+    <img src="awan_trekking_mountain_divider.png" alt="Mount Batur Mountain Divider">
+</div>
+
 <!-- =========================
      EXPERIENCE MOUNT BATUR
 ========================= -->
@@ -1477,7 +1529,7 @@ footer a{
             Choose your perfect Mount Batur experience,
             from sunrise trekking to scenic Jeep adventures.
         </p>
-
+        
     </div>
 
     <div class="experience-grid">
