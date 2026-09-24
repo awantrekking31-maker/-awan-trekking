@@ -350,6 +350,37 @@ section{
     object-fit:contain;
 }
 
+.mountain-divider{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.mountain-divider::before,
+.mountain-divider::after{
+    content:"";
+    position:absolute;
+    height:3px;
+    background:#2f6658;
+    top:78%;
+    z-index:1;
+}
+
+.mountain-divider::before{
+    left:0;
+    right:calc(50% + 60px);
+}
+
+.mountain-divider::after{
+    left:calc(50% + 60px);
+    right:0;
+}
+
+.mountain-divider img{
+    position:relative;
+    z-index:2;
+}
 .experience-content h3{
     font-size:24px;
     line-height:1.25;
