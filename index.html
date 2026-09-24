@@ -1650,33 +1650,92 @@ footer a{
 <!-- TOUR FILTER -->
 <div class="tour-filters">
 
-    <div class="filter-row">
-        <button class="tour-filter active" data-filter="all">
-            All Tours
-        </button>
+  <div class="filter-row">
 
-        <button class="tour-filter" data-filter="trekking">
-            Trekking
-        </button>
+    <!-- ALL TOURS -->
+    <button class="tour-filter active" data-filter="all">
+      <img src="IMG_5349.jpeg" alt="All Tours">
+      <span>All Tours</span>
+    </button>
 
-        <button class="tour-filter" data-filter="jeep">
-            Jeep
-        </button>
+    <!-- TREKKING -->
+    <button class="tour-filter" data-filter="trekking">
+      <img src="IMG_5348.jpeg" alt="Trekking">
+      <span>Trekking</span>
+    </button>
 
-        <button class="tour-filter" data-filter="atv">
-            ATV
-        </button>
+    <!-- JEEP -->
+    <button class="tour-filter" data-filter="jeep">
+      <img src="IMG_5346.jpeg" alt="Jeep">
+      <span>Jeep</span>
+    </button>
 
-        <button class="tour-filter" data-filter="rafting">
-            Rafting
-        </button>
-    </div>
+    <!-- ATV -->
+    <button class="tour-filter" data-filter="atv">
+      <img src="IMG_5344.jpeg" alt="ATV">
+      <span>ATV</span>
+    </button>
 
-    <div class="filter-row special-row">
-        <button class="tour-filter special" data-filter="combo">
-            Special Combo
-        </button>
-    </div>
+    <!-- RAFTING -->
+    <button class="tour-filter" data-filter="rafting">
+      <img src="IMG_5345.jpeg" alt="Rafting">
+      <span>Rafting</span>
+    </button>
+
+    <!-- WATERFALL -->
+    <button class="tour-filter" data-filter="waterfall">
+      <img src="IMG_5342.jpeg" alt="Waterfall">
+      <span>Waterfall</span>
+    </button>
+
+    <!-- SPECIAL COMBO -->
+    <button class="tour-filter special" data-filter="special">
+      <img src="IMG_5343.jpeg" alt="Special Combo">
+      <span>Special Combo</span>
+    </button>
+
+  </div>
+
+  <div class="tour-count">
+    <span id="tourCount">6</span> tours available
+  </div>
+
+</div>
+
+  <button class="tour-filter" data-filter="trekking">
+    <img src="IMG_5348.jpeg" alt="Trekking">
+    <span>Trekking</span>
+  </button>
+
+  <button class="tour-filter" data-filter="jeep">
+    <img src="IMG_5346.jpeg" alt="Jeep">
+    <span>Jeep</span>
+  </button>
+<button class="tour-filter active" data-filter="all">
+    <img src="IMG_5349.jpeg" alt="All Tours">
+    <span>All Tours</span>
+</button>
+  <button class="tour-filter" data-filter="atv">
+    <img src="IMG_5344.jpeg" alt="ATV">
+    <span>ATV</span>
+  </button>
+
+  <button class="tour-filter" data-filter="rafting">
+    <img src="IMG_5345.jpeg" alt="Rafting">
+    <span>Rafting</span>
+  </button>
+
+  <button class="tour-filter" data-filter="waterfall">
+    <img src="IMG_5342.jpeg" alt="Waterfall">
+    <span>Waterfall</span>
+  </button>
+
+  <button class="tour-filter special" data-filter="special">
+    <img src="IMG_5343.jpeg" alt="Special Combo">
+    <span>Special Combo</span>
+  </button>
+
+</div>
 
     <div class="tour-count">
         <span id="tourCount">6</span> tours available
@@ -1686,56 +1745,108 @@ footer a{
 
 <div class="experience-grid">
 
-        <!-- 1 -->
-        <a href="#booking" class="experience-card">
-            <div class="experience-icon">🌅</div>
+    <!-- 1. TREKKING -->
+    <a href="#booking" class="experience-card" data-category="trekking">
+        <img src="IMG_5348.jpeg" alt="Mount Batur Sunrise Trekking">
+
+        <div class="experience-content">
             <h3>Mount Batur Sunrise Trekking</h3>
-            <p>Private Tour</p>
-            <span>View Tour →</span>
-        </a>
 
-        <!-- 2 -->
-        <a href="#booking" class="experience-card">
-            <div class="experience-icon">🥾</div>
-            <h3>Mount Batur Daytime Trekking</h3>
-            <p>Daytime Adventure</p>
-            <span>View Tour →</span>
-        </a>
+            <div class="experience-info">
+                <span>◷ 5–6 Hours</span>
+                <span>⌁ Amazing Views</span>
+            </div>
 
-        <!-- 3 -->
-        <a href="#booking" class="experience-card">
-            <div class="experience-icon">🌄</div>
-            <h3>Mount Batur Sunset Trekking</h3>
-            <p>Private Tour</p>
-            <span>View Tour →</span>
-        </a>
+            <span class="book-now">Book Now →</span>
+        </div>
+    </a>
 
-        <!-- 4 -->
-        <a href="#booking" class="experience-card">
-            <div class="experience-icon">🚙</div>
-            <h3>Mount Batur Sunrise Jeep Tour</h3>
-            <p>4WD Jeep Adventure</p>
-            <span>View Tour →</span>
-        </a>
 
-        <!-- 5 -->
-        <a href="#booking" class="experience-card">
-            <div class="experience-icon">🏔️</div>
-            <h3>Mount Batur Daytime Jeep Tour</h3>
-            <p>Volcanic Landscape</p>
-            <span>View Tour →</span>
-        </a>
+    <!-- 2. JEEP -->
+    <a href="#booking" class="experience-card" data-category="jeep">
+        <img src="IMG_5346.jpeg" alt="Mount Batur Jeep Tour">
 
-        <!-- 6 -->
-        <a href="#booking" class="experience-card">
-            <div class="experience-icon">🌅</div>
-            <h3>Mount Batur Sunset Jeep Tour</h3>
-            <p>Sunset Adventure</p>
-            <span>View Tour →</span>
-        </a>
+        <div class="experience-content">
+            <h3>Mount Batur Jeep Tour</h3>
 
-    </div>
+            <div class="experience-info">
+                <span>◷ 4–6 Hours</span>
+                <span>⌁ Scenic Adventure</span>
+            </div>
 
+            <span class="book-now">Book Now →</span>
+        </div>
+    </a>
+
+
+    <!-- 3. ATV -->
+    <a href="#booking" class="experience-card" data-category="atv">
+        <img src="IMG_5344.jpeg" alt="Mount Batur ATV Ride">
+
+        <div class="experience-content">
+            <h3>Mount Batur ATV Ride</h3>
+
+            <div class="experience-info">
+                <span>◷ 1.5–2 Hours</span>
+                <span>⌁ Fun & Adventure</span>
+            </div>
+
+            <span class="book-now">Book Now →</span>
+        </div>
+    </a>
+
+
+    <!-- 4. RAFTING -->
+    <a href="#booking" class="experience-card" data-category="rafting">
+        <img src="IMG_5345.jpeg" alt="Bali Rafting Adventure">
+
+        <div class="experience-content">
+            <h3>Bali Rafting Adventure</h3>
+
+            <div class="experience-info">
+                <span>◷ 3–4 Hours</span>
+                <span>⌁ Adventure</span>
+            </div>
+
+            <span class="book-now">Book Now →</span>
+        </div>
+    </a>
+
+
+    <!-- 5. WATERFALL -->
+    <a href="#booking" class="experience-card" data-category="waterfall">
+        <img src="IMG_5342.jpeg" alt="Bali Waterfall Tour">
+
+        <div class="experience-content">
+            <h3>Bali Waterfall Tour</h3>
+
+            <div class="experience-info">
+                <span>◷ 4–8 Hours</span>
+                <span>⌁ Nature & Culture</span>
+            </div>
+
+            <span class="book-now">Book Now →</span>
+        </div>
+    </a>
+
+
+    <!-- 6. SPECIAL COMBO -->
+    <a href="#booking" class="experience-card" data-category="special">
+        <img src="IMG_5343.jpeg" alt="Bali Special Combo">
+
+        <div class="experience-content">
+            <h3>Bali Special Combo</h3>
+
+            <div class="experience-info">
+                <span>◷ Full Day</span>
+                <span>⌁ Complete Adventure</span>
+            </div>
+
+            <span class="book-now">Book Now →</span>
+        </div>
+    </a>
+
+</div>
 </section>
 
 
@@ -2358,21 +2469,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     slides[currentSlide].classList.add("active");
 
-  }, 4000);
+}, 4000);
 
 });
 
 document.querySelectorAll(".tour-filter").forEach(button => {
+
   button.addEventListener("click", function() {
 
     document.querySelectorAll(".tour-filter").forEach(btn => {
+
       btn.classList.remove("active");
+
     });
 
     this.classList.add("active");
+
   });
+
 });
+
 </script>
 
 </body>
+
 </html>
