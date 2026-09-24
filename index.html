@@ -1437,11 +1437,10 @@ footer a{
   gap:6px;
 }
 
-.tour-filter:hover,
 .tour-filter.active{
-  background:#f28c28;
-  color:#ffffff;
-  border-color:#f28c28;
+    background:#f28c28;
+    color:#ffffff;
+    border-color:#f28c28;
 }
 
 .special-row{
@@ -1460,11 +1459,6 @@ footer a{
   border-color:#f28c28;
 }
 
-.tour-filter.special:hover{
-  background:#f28c28;
-  color:#ffffff;
-  border-color:#f28c28;
-}
 </style>
 </head>
 
@@ -2492,20 +2486,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-document.querySelectorAll(".tour-filter").forEach(button => {
+const tourFilters = document.querySelectorAll(".tour-filters .tour-filter");
 
-  button.addEventListener("click", function() {
+tourFilters.forEach(button => {
+  button.addEventListener("click", function () {
 
-    document.querySelectorAll(".tour-filter").forEach(btn => {
-
+    tourFilters.forEach(btn => {
       btn.classList.remove("active");
-
     });
 
     this.classList.add("active");
 
   });
-
 });
 
 </script>
