@@ -2342,6 +2342,7 @@ Instagram: @awantrekking
 </footer>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
   const slides = document.querySelectorAll(".hero-slide");
 
@@ -2359,6 +2360,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }, 4000);
 
+});
+
+document.querySelectorAll(".tour-filter").forEach(button => {
+  button.addEventListener("click", function() {
+
+    document.querySelectorAll(".tour-filter").forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+    this.classList.add("active");
+  });
 });
 </script>
 
