@@ -1399,10 +1399,33 @@ footer a{
 /* TOUR FILTER */
 
 .filter-row{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:10px;
+    display:grid;
+    grid-template-columns:repeat(5, max-content);
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+/* BARIS 1 — ALL TOURS */
+.filter-row .tour-filter:first-child{
+    grid-column:1 / -1;
+    justify-self:center;
+}
+
+/* BARIS 2 — TREKKING sampai WATERFALL */
+.filter-row .tour-filter:nth-child(2),
+.filter-row .tour-filter:nth-child(3),
+.filter-row .tour-filter:nth-child(4),
+.filter-row .tour-filter:nth-child(5),
+.filter-row .tour-filter:nth-child(6){
+    grid-row:2;
+}
+
+/* BARIS 3 — SPECIAL COMBO */
+.filter-row .tour-filter.special{
+    grid-column:1 / -1;
+    grid-row:3;
+    justify-self:center;
 }
 
 .tour-filter{
